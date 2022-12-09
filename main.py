@@ -94,33 +94,5 @@ async def on_message(message):
 　　 if message.content == "!edit":
         await message.author.edit(nick="ニックネームを入れてね")
     # 実行は自分のPCまたはサーバーで
-    @buttons.click
-async def button_ephemeral(ctx):
-	await ctx.reply("このメッセージはあなたにしか見えていません！", flags = MessageFlags().EPHEMERAL)
-
-@bot.command()
-async def create(ctx):
-	await buttons.send(
-		content = "テストボタン", 
-		channel = ctx.channel.id,
-		components = [
-			ActionRow([
-				Button(
-					label="Hello", 
-					style=ButtonType().Primary, 
-					custom_id="button_hello"
-				)
-			]),ActionRow([
-				Button(
-					label="Ephemeral",
-					style=ButtonType().Danger,
-					custom_id="button_ephemeral"
-				)
-			])
-		]
-	)
-
    
-
-    
 client.run(TOKEN)
