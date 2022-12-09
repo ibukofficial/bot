@@ -91,9 +91,6 @@ async def on_message(message):
     if message.content == "!D":
         embed = discord.Embed(title="デトロッパー",description="デトロッパーツール\n開発OS\n 1.mac 2.windows\n開発ソフト\nvisualstudiochord2019",color=0xff0000)
         await message.channel.send(embed=embed)
-　　 if message.content == "!edit":
-        async def on_message(message):
-        await message.author.edit(nick="ニックネームを入れてね")
     # 実行は自分のPCまたはサーバーで
    
 client.run(TOKEN)
