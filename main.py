@@ -6,10 +6,7 @@ import asyncio
 from discord.ext import tasks
 from datetime import datetime 
 from discord.ext import commands
-#pip install discord-buttons-plugin
-from discord_buttons_plugin import *
-bot = commands.Bot(command_prefix = "m!")
-buttons = ButtonsClient(bot)
+
 
 youtube_url = 'https://www.youtube.com/watch?v=FIw-HUP7XK0' # youtubeのURLを指定
 
